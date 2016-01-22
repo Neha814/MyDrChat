@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dr"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        android:background="@color/bg_color" >
+
+        <ImageView
+            android:id="@+id/chat_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/back"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/chat_img"
+            android:text="Doctor List"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/back"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bck"
+            android:onClick="back" />
+
+        <Button
+            android:id="@+id/attach"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/attachment"
+            android:padding="6dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.90" 
+        android:weightSum="10"
+        android:orientation="vertical">
+        
+        <com.macrew.enitites.RefreshableListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#ffffff"
+            android:dividerHeight="1dp"
+            android:layout_weight="8.5"
+              android:divider="@null"
+            android:smoothScrollbar="true" />
+       
+	
+        <LinearLayout 
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <!-- ************************************************ -->
+            	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp" >
+
+                <EditText
+                    android:id="@+id/message_to_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:imeOptions="actionSend"
+                    android:inputType="textMultiLine|textLongMessage|textNoSuggestions"
+                    android:maxLines="15"
+                    android:scrollHorizontally="true" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" >
+
+                <Button
+                    android:id="@+id/send"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/image" />
+            </LinearLayout>
+        </LinearLayout>
+            <!-- ************************************************* -->
+            
+        </LinearLayout>
+       
+        
+    </LinearLayout>
+
+</LinearLayout> <!-- android:listSelector="@android:color/darker_gray" -->

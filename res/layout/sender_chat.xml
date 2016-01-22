@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sender_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="start"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:text="23/45/5666"
+        android:textStyle="italic" />
+
+    <RelativeLayout
+        android:id="@+id/chat_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- android:background="@drawable/bubble_green" -->
+        
+        <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="start"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:text="Me"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/chat_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+          android:background="#81aedd"
+            android:padding="10dp"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="35dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="hlo hlo"
+           
+            android:textColor="#ffffff" />
+        <!--
+         android:background="#BCBCBC"
+         android:textColor="#0066ff"
+        -->
+    </RelativeLayout>
+
+</LinearLayout>

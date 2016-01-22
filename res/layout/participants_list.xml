@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+ 	android:paddingLeft="10dp"
+ 	android:paddingRight="15dp"
+    android:orientation="horizontal"
+ 
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:weightSum="1" >
+    
+    <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="80dp"
+         android:layout_height="80dp"
+         android:src="@drawable/default_pic" />
+    
+    <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_vertical"
+         android:orientation="vertical">
+
+     <CheckedTextView
+        android:id="@+id/checkedTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:paddingLeft="8dp"
+        android:text="CheckedTextView" />
+     
+      <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+     	android:layout_marginTop="10dp"
+        android:paddingLeft="8dp"
+        android:text="54654765856865" />
+     
+     </LinearLayout>
+
+     
+
+</LinearLayout>
+
+<!-- android:listSelector="@android:color/darker_gray" -->
